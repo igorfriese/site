@@ -2,7 +2,7 @@
 
 Aluno: Igor Vinicius da Silveira Friese  
 Curso: Introdução à Programação Front-End e Back-End  
-Instituição: SENAI/SC LAB365  
+Instituição: SCTEC SENAI/SC LAB365  
 
 ---
 
@@ -46,7 +46,7 @@ Link: https://igorfriese.github.io/JogoDaVelha/
 
 ### 2. Sistema de Cadastro
 Sistema simples com operações de cadastro, edição e exclusão de registros.
-Tecnologias utilizadas: HTML, CSS e JavaScript.  
+Tecnologias utilizadas: HTML, CSS, JavaScript, MySql, Node.js e Express.js  
 Link: Demonstração não disponível.
 
 ### 3. Landing Page

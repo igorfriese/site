@@ -1,125 +1,243 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Meu Portfólio | Desenvolvedor</title>
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Igor Friese | Desenvolvedor </title>
+
+    <meta
+      name="description"
+      content="Portfólio de Igor Friese, desenvolvedor em formação especializado em C#, .NET, Delphi, HTML, CSS e JavaScript."
+    />
+
+    <meta property="og:title" content="Igor Friese | Desenvolvedor" />
+    <meta
+      property="og:description"
+      content="Portfólio profissional de Igor Friese."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://igorfriese.github.io/portfolio/"
+    />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+
+    <nav class="navbar">
+      <div class="container">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <header>
-      <h1>Olá, eu sou o Igor Vinicius da Silveira Friese</h1>
-      <p>
-        Desenvolvedor em formação e estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e criação de soluções digitais.
-      </p>
-      <button class="btn" onclick="scrollToSection('sobre')">Sobre mim</button>
-      <button class="btn" onclick="scrollToSection('projetos')">Ver Projetos</button>
-      <button class="btn" onclick="scrollToSection('habilidades')">Habilidades</button>
-      <button class="btn" onclick="scrollToSection('contato')">Contato</button>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+
+        <span class="badge"><i class="fa-solid fa-code"></i>Desenvolvedor em Formação</span>
+
+        <h1>Igor Friese</h1>
+
+        <h2>Desenvolvedor C#, .NET e Delphi</h2>
+
+        <p>
+          Estudante de Análise e Desenvolvimento de Sistemas com experiência
+          prática em desenvolvimento de software, apaixonado por tecnologia,
+          resolução de problemas e criação de soluções digitais modernas.
+        </p>
+
+        <div class="buttons">
+
+          <a href="#sobre" class="btn">Sobre Mim</a>
+
+          <a href="#projetos" class="btn btn-outline">Ver Projetos</a>
+
+          <a href="#contato" class="btn btn-outline">Contato</a>
+        </div>
+      </div>
     </header>
 
     <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p id="sobreMim">
-        Estudante focado no desenvolvimento de software, com base sólida em lógica de programação,
-        estruturação de código e aplicação de boas práticas. Venho aprofundando meus conhecimentos em tecnologias como HTML, CSS,
-        JavaScript, Node.js, C# e .NET, desenvolvendo projetos práticos que fortalecem
-        minha capacidade de analisar problemas e construir soluções eficientes.
-        <br> <br>
-        Acredito que a evolução na área de tecnologia exige disciplina,
-        constância e aprendizado contínuo. Por isso, mantenho uma rotina de
-        estudos e desenvolvimento pessoal, sempre buscando aprimorar tanto
-        minhas competências técnicas quanto minhas habilidades comportamentais,
-        como organização, responsabilidade e trabalho em equipe.
-        <br> <br>
-        Meu objetivo é crescer de forma consistente na área de desenvolvimento,
-        contribuindo com dedicação, comprometimento e vontade de aprender,
-        enquanto evoluo tecnicamente e profissionalmente.
-      </p>
+      <div class="container">
+
+        <h2>Sobre Mim</h2>
+
+        <p>
+          Desenvolvedor em formação e estudante de ADS, com experiência prática
+          em desenvolvimento de software e foco em tecnologias como C#, .NET,
+          Delphi, MySQL, Firebird, HTML, CSS e JavaScript.
+        </p>
+
+        <p>Atualmente atuo como<strong>Estagiário de Desenvolvimento na SCI Sistemas Contábeis</strong>e participo do programa<strong>ENTRA21 - Turma de C#</strong>.</p>
+
+        <p>
+          Busco evolução constante através de estudos, projetos práticos e
+          desenvolvimento profissional contínuo.
+        </p>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="container">
+
+        <h2>Experiência</h2>
+
+        <div class="card">
+
+          <h3>Estagiário de Desenvolvimento — Delphi</h3>
+
+          <p class="empresa">SCI Sistemas Contábeis</p>
+          <p>
+            Atuação com manutenção e desenvolvimento de sistemas utilizando
+            Delphi, bancos de dados relacionais, lógica de negócio e suporte
+            em demandas relacionadas ao desenvolvimento de software.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="projects">
-        <div class="card">
-          <h3>Jogo da Velha</h3>
-          <p>
-            Aplicação web interativa desenvolvida com manipulação de DOM, controle de estado da aplicação e lógica de programação.
-          </p>
-          <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript.</p>
-          <a href="https://igorfriese.github.io/JogoDaVelha/" target="_blank">Ver projeto</a>
-        </div>
-        <div class="card">
-          <h3>Sistema de Cadastro</h3>
-          <p>Sistema CRUD simples para cadastro de usuários, permitindo adicionar, editar e excluir registros.</p>
-          <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript, MySql, Node.js e Express.js</p>
-        </div>
-        <div class="card">
-          <h3>Landing Page</h3>
-          <p>Desenvolvimento de portfólio pessoal responsivo utilizando manipulação de DOM, organização modular de código e princípios de boas práticas de desenvolvimento front-end.</p>
-          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript.</p>
-          <a href="https://igorfriese.github.io/Portfolio/" target="_blank">Ver projeto</a>
+      <div class="container">
+
+        <h2>Projetos</h2>
+
+        <div class="projects">
+          <div class="card">
+
+            <h3>Jogo da Velha</h3>
+
+            <p>
+              Aplicação web interativa desenvolvida com manipulação de DOM,
+              controle de estado e lógica de programação.
+            </p>
+
+            <p><strong>Tecnologias:</strong>HTML, CSS e JavaScript</p>
+
+            <div class="project-links">
+
+              <a href="https://igorfriese.github.io/jogo-da-velha/"target="_blank">Demo</a>
+
+              <a href="https://github.com/igorfriese/jogo-da-velha"target="_blank">Código</a>
+            </div>
+          </div>
+
+          <div class="card">
+
+            <h3>Gerenciador de Tarefas</h3>
+
+            <p>
+              Aplicação de console em C# utilizando orientação a objetos para
+              gerenciamento de tarefas.
+            </p>
+
+            <p><strong>Tecnologias:</strong>C# e .NET</p>
+
+            <div class="project-links">
+
+              <a href="https://github.com/igorfriese/gerenciador-de-tarefas"target="_blank">Código</a>
+            </div>
+          </div>
+
+          <div class="card">
+
+            <h3>Portfólio Pessoal</h3>
+
+            <p>Website responsivo desenvolvido utilizando HTML, CSS e JavaScript com foco em design moderno e boas práticas de front-end.</p>
+            <p><strong>Tecnologias:</strong>HTML, CSS e JavaScript</p>
+
+            <div class="project-links">
+              <a href="https://igorfriese.github.io/portfolio/"target="_blank">Demo</a>
+              <a href="https://github.com/igorfriese/portfolio"target="_blank">Código</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="habilidades">
-      <h2>Hard Skills</h2>
-      <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">C#</div>
-        <div class="skill">.NET</div>
-        <div class="skill">SQL</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Padrão MVC</div>
-      </div>
-      <br>
-      <h2>Soft Skills</h2>
-      <div class="skills">
-        <div class="skill">Comunicação</div>
-        <div class="skill">Trabalho em equipe</div>
-        <div class="skill">Resolução de problemas</div>
-        <div class="skill">Proatividade</div>
-        <div class="skill">Aprendizado contínuo</div>
-        <div class="skill">Organização</div>
+      <div class="container">
+        <h2>Hard Skills</h2>
+
+        <div class="skills">
+          <div class="skill">C#</div>
+          <div class="skill">.NET</div>
+          <div class="skill">Delphi</div>
+          <div class="skill">MySQL</div>
+          <div class="skill">Firebird</div>
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Git & GitHub</div>
+          <div class="skill">Scrum</div>
+          <div class="skill">Kanban</div>
+          <div class="skill">Inglês Técnico</div>
+
+        </div>
+        <br/><br/>
+        <h2>Soft Skills</h2>
+
+        <div class="skills">
+          <div class="skill">Comunicação</div>
+          <div class="skill">Trabalho em Equipe</div>
+          <div class="skill">Resolução de Problemas</div>
+          <div class="skill">Proatividade</div>
+          <div class="skill">Aprendizado Contínuo</div>
+          <div class="skill">Organização</div>
+        </div>
       </div>
     </section>
 
     <section id="contato">
-      <h2>Contato</h2>
-      <div class="contact">
-        <p>
-          Estou aberto a oportunidades de estágio e projetos na área de
-          desenvolvimento. Entre em contato:
-        </p>
+      <div class="container">
+        <h2>Contato</h2>
 
-        <div class="contact-links">
-          <p>
-            💼 LinkedIn:
-            <a href="https://www.linkedin.com/in/igorfriese" target="_blank">linkedin.com/in/igorfriese</a>
-          </p>
-          <p>
-            💻 GitHub:
-            <a href="https://github.com/igorfriese" target="_blank">github.com/igorfriese</a>
-          </p>
-          <p>
-            📧 Email:
-            <a href="mailto:igorfriese2000@gmail.com">igorfriese2000@gmail.com</a>
-          </p>
-          <p>
-            📱 Telefone:
-            <a href="tel:+5547984210256">+55 (47) 98421-0256</a>
-          </p>
+        <div class="contact">
+          <p>Entre em contato comigo:</p>
+          <div class="contact-links">
+            <p>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/igorfriese" target="_blank">linkedin.com/in/igorfriese</a>
+            </p>
+
+            <p>
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/igorfriese" target="_blank">github.com/igorfriese</a>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:igorfriese2000@gmail.com">igorfriese2000@gmail.com</a>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+5547984210256">+55 (47) 98421-0256</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <p>© 2026 - Desenvolvido por Igor Friese</p>
+      <p>© 2026 Igor Friese • Todos os direitos reservados</p>
     </footer>
-    <script src="script.js"></script>
+
   </body>
 </html>

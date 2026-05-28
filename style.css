@@ -179,6 +179,10 @@ section p {
   margin-bottom: 20px;
 }
 
+.tecnologias{
+  color: #ffffff;  
+}
+
 .projects,
 .skills {
   display: flex;
